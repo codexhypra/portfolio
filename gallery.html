@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Hypra</title>
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <!-- Include your CSS stylesheets and any other necessary assets here -->
+</head>
+<body>
+    <header>
+        <!-- Add a navigation menu for your gallery page if needed -->
+    </header>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="image-gallery">
+            <!-- Add your design images here -->
+            <div class="gallery-item">
+                <img src="assets/img/three-slide/thumb-2.jpg" alt="Design 1" onclick="openImage(this)">
+                <div class="filename">Off White Low Vulcanized Outlined</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/three-slide/thumb-3.jpg" alt="Design 2" onclick="openImage(this)">
+                <div class="filename">Off White Golden Ratio</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/three-slide/thumb-1.jpg" alt="Design 3" onclick="openImage(this)">
+                <div class="filename">Jordan Puffed</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/full-slide/thumb-3.jpg" alt="Design 4" onclick="openImage(this)">
+                <div class="filename">YBN GRAFFITI BANNER</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/full-slide/thumb-2.jpg" alt="Design 5" onclick="openImage(this)">
+                <div class="filename">HOONICORN</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/full-slide/thumb-1.jpg" alt="Design 6" onclick="openImage(this)">
+                <div class="filename">HYPROX GRAFFITI</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/gallery/gallery-2.png" alt="Design 7" onclick="openImage(this)">
+                <div class="filename">Off White Low Vulcanized</div>
+            </div>
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <div class="modal" id="modal">
+        <img src="" alt="Fullscreen Image" id="fullscreen-image">
+        <span class="close-button" onclick="closeImage()">&times;</span>
+    </div>
+
+    <footer>
+        <!-- Add a footer if needed -->
+    </footer>
+    
+    <script src="assets/js/gallery.js"></script> <!-- Include your JavaScript file -->
+</body>
+</html>

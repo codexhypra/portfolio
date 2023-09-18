@@ -1,0 +1,116 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:100,400,700";
+@font-face {
+    font-family: "LMRomanSlant10";
+    src: url("fonts/lmromanslant10-regular-webfont.eot");
+    src: url("fonts/lmromanslant10-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/lmromanslant10-regular-webfont.woff") format("woff"), url("fonts/lmromanslant10-regular-webfont.ttf") format("truetype"),
+        url("fonts/lmromanslant10-regular-webfont.svg#latin_modern_roman_slante10Rg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #060606; /* Background color from provided CSS */
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "LMRomanSlant10", serif;
+    color: #ebebeb; /* Text color from provided CSS */
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 415px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Rest of your project-specific CSS here */
+
+/* Add the styles from the provided CSS for specific elements as needed */
+
+/* Example for h1 element */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    color: #b8b8b8; /* Color from provided CSS */
+    font-weight: bold;
+}
+
+
+section#gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-gallery .gallery-item {
+    flex: 0 0 calc(30% - 20px); /* Adjust the width as needed */
+    margin: 10px;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 7px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Add this to your existing main.css file */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.modal img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #b8b8b8;
+    cursor: pointer;
+}
+
+
+/* Add this to your existing CSS file */
+
+
+.filename {
+    text-align: center;
+    margin-top: 5px; /* Adjust the spacing as needed */
+    color: #b8b8b8;
+    font-size: 14px; /* Adjust the font size as needed */
+}
+

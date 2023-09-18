@@ -779,6 +779,9 @@ svg path {
 #full-slide .banner li:nth-child(3) {
     background-image: url("../img/full-slide/thumb-3.jpg");
 }
+#full-slide .banner li:nth-child(4) {
+    background-image: url("../img/full-slide/thumb-4.jpg");
+}
 #full-slide i {
     position: absolute;
     top: 50%;

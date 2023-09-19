@@ -1,28 +1,28 @@
 @import "https://fonts.googleapis.com/css?family=Raleway:100,400,700";
 @font-face {
     font-family: 'gg_sans_Bold';
-    src: url('/assets/css/fonts/gg_sans_Bold.woff') format('woff');
+    src: url('./fonts/gg_sans_Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gg_sans_Medium';
-    src: url('/assets/css/fonts/gg_sans_Medium.woff') format('woff');
+    src: url('./fonts/gg_sans_Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gg_sans_Regular';
-    src: url('/assets/css/fonts/gg_sans_Regular.woff') format('woff');
+    src: url('./fonts/gg_sans_Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gg_sans_Semibold';
-    src: url('/assets/css/fonts/gg_sans_Semibold.woff') format('woff');
+    src: url('./fonts/gg_sans_Semibold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -85,11 +85,11 @@ section#gallery {
     max-width: 100%;
     height: auto;
     border-radius: 7px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.1s ease-in-out;
 }
 
 .image-gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 /* Add this to your existing main.css file */

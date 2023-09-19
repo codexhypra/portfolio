@@ -1,38 +1,35 @@
 @import "https://fonts.googleapis.com/css?family=Raleway:100,400,700";
 @font-face {
-    font-family: 'gg sans Bold';
-    src: url('/assets/css/fonts/gg sans Bold.woff2') format('woff2'),
-         url('/assets/css/fonts/gg sans Bold.woff') format('woff');
+    font-family: 'gg_sans_Bold';
+    src: url('/assets/css/fonts/gg_sans_Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'gg sans Medium';
-    src: url('/assets/css/fonts/gg sans Medium.woff2') format('woff2'),
-         url('/assets/css/fonts/gg sans Medium.woff') format('woff');
+    font-family: 'gg_sans_Medium';
+    src: url('/assets/css/fonts/gg_sans_Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'gg sans Regular';
-    src: url('/assets/css/fonts/gg sans Regular.woff2') format('woff2'),
-         url('/assets/css/fonts/gg sans Regular.woff') format('woff');
+    font-family: 'gg_sans_Regular';
+    src: url('/assets/css/fonts/gg_sans_Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'gg sans Semibold';
-    src: url('/assets/css/fonts/gg sans Semibold.woff2') format('woff2'),
-         url('/assets/css/fonts/gg sans Semibold.woff') format('woff');
+    font-family: 'gg_sans_Semibold';
+    src: url('/assets/css/fonts/gg_sans_Semibold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
+
 
 html {
-    font-family: 'gg sans Regular', sans-serif;
+    font-family: 'gg_sans_Regular', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -42,7 +39,7 @@ body {
     background-color: #060606; /* Background color from provided CSS */
     font-size: 16px;
     line-height: 1.6;
-    font-family: "gg sans Regular";
+    font-family: "gg_sans_Regular";
     color: #ebebeb; /* Text color from provided CSS */
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;

@@ -1,14 +1,38 @@
 @import "https://fonts.googleapis.com/css?family=Raleway:100,400,700";
 @font-face {
-    font-family: "LMRomanSlant10";
-    src: url("fonts/lmromanslant10-regular-webfont.eot");
-    src: url("fonts/lmromanslant10-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/lmromanslant10-regular-webfont.woff") format("woff"), url("fonts/lmromanslant10-regular-webfont.ttf") format("truetype"),
-        url("fonts/lmromanslant10-regular-webfont.svg#latin_modern_roman_slante10Rg") format("svg");
+    font-family: 'gg sans Bold';
+    src: url('/assets/css/fonts/gg sans Bold.woff2') format('woff2'),
+         url('/assets/css/fonts/gg sans Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gg sans Medium';
+    src: url('/assets/css/fonts/gg sans Medium.woff2') format('woff2'),
+         url('/assets/css/fonts/gg sans Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-} /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+}
+
+@font-face {
+    font-family: 'gg sans Regular';
+    src: url('/assets/css/fonts/gg sans Regular.woff2') format('woff2'),
+         url('/assets/css/fonts/gg sans Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gg sans Semibold';
+    src: url('/assets/css/fonts/gg sans Semibold.woff2') format('woff2'),
+         url('/assets/css/fonts/gg sans Semibold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 html {
-    font-family: sans-serif;
+    font-family: 'gg sans Regular', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -209,27 +233,22 @@ th {
 .icon-chevron-thin-right:before {
     content: "\e905";
 }
-.icon-pinterest-p:before {
-    content: "\e900";
-}
 .icon-twitter:before {
     content: "\e901";
 }
 .icon-instagram:before {
     content: "\e902";
 }
-.icon-facebook:before {
-    content: "\e903";
-}
 body {
     background-color: #060606;
     font-size: 16px;
     line-height: 1.6;
-    font-family: "LMRomanSlant10", serif;
+    font-family: "gg sans Regular", sans-serif;
     color: #ebebeb;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
 }
+
 @media (max-width: 415px) {
     body {
         font-size: 14px;
@@ -419,7 +438,7 @@ svg path {
     padding: 5px 0;
     color: #1a1a1a;
     font-size: 12px;
-    font-family: "Raleway", Helvetica, sans-serif;
+    font-family: "gg sans Regular", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     -webkit-transition: background-color 0.2s ease-in-out;
@@ -483,7 +502,7 @@ svg path {
 #hero header .nav-toggle p {
     margin-bottom: 0;
     font-size: 14px;
-    font-family: "Raleway", Helvetica, sans-serif;
+    font-family: "gg sans Regular", sans-serif;
     text-transform: uppercase;
 }
 #hero header .nav-toggle span,
@@ -531,7 +550,7 @@ svg path {
     margin-top: 0;
     margin-bottom: 30px;
     font-size: 42px;
-    font-family: "Raleway", Helvetica, sans-serif;
+    font-family: "gg sans Regular", sans-serif;
     font-weight: 100;
 }
 @media (max-width: 640px) {
@@ -638,7 +657,7 @@ svg path {
     margin-top: 0;
     margin-bottom: 30px;
     font-size: 42px;
-    font-family: "Raleway", Helvetica, sans-serif;
+    font-family: "gg sans Regular", sans-serif;
     font-weight: 100;
 }
 @media (max-width: 640px) {
@@ -873,7 +892,7 @@ svg path {
     margin-top: 0;
     margin-bottom: 30px;
     font-size: 42px;
-    font-family: "Raleway", Helvetica, sans-serif;
+    font-family: "gg sans Regular", sans-serif;
     font-weight: 100;
 }
 @media (max-width: 640px) {
@@ -1118,7 +1137,7 @@ svg path {
     margin-top: 0;
     margin-bottom: 30px;
     font-size: 42px;
-    font-family: "Raleway", Helvetica, sans-serif;
+    font-family: "gg sans Bold", sans-serif;
     font-weight: 100;
 }
 @media (max-width: 640px) {
@@ -1145,7 +1164,7 @@ svg path {
     -ms-flex-pack: justify;
     justify-content: space-between;
     color: #ebebeb;
-    font-family: "Raleway", Helvetica, sans-serif;
+    font-family: "gg sans Bold", sans-serif;
 }
 #contact .wrapper form input[type="email"],
 #contact .wrapper form input[type="text"] {
@@ -1228,6 +1247,28 @@ svg path {
     -webkit-transform: translate(-50%);
     transform: translate(-50%);
     margin-bottom: 0;
-    font-family: "Raleway", Helvetica, sans-serif;
+    font-family: "gg sans Bold", sans-serif;
     font-size: 12px;
+}
+
+
+/* Add this CSS for the gallery button */
+.gallery-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ebebeb; /* Match the background color of the navigation */
+    color: #1a1a1a; /* Match the text color of the navigation */
+    font-size: 16px;
+    font-family: "gg sans Bold", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.gallery-button:hover {
+    background-color: #909090; /* Change the background color on hover */
+    color: #fff; /* Change the text color on hover */
 }

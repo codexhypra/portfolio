@@ -13,6 +13,13 @@ function openImage(image) {
 
     // Display the modal
     modal.style.display = "block";
+
+    // Add a click event listener to the modal overlay
+    modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            closeImage();
+        }
+    });
 }
 
 function closeImage() {

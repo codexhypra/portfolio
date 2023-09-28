@@ -52,4 +52,24 @@ function toggleNav() {
     // Hide the loading overlay when the page has fully loaded
     hideLoadingOverlay();
   });
+
+  $(document).ready(function() {
+    // Smooth scrolling for anchor links
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+  
+        var hash = this.hash;
+  
+        // Add smooth scrolling animation
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  
   

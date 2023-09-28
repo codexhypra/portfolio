@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // All images are loaded, hide the loading overlay and show the gallery
             document.getElementById("loading-overlay").style.display = "none";
             document.getElementById("gallery").style.display = "block";
+            document.getElementById("home-button-container").style.display = "block";
         }
     }
 
@@ -71,3 +72,5 @@ document.addEventListener("DOMContentLoaded", function () {
         };
     });
 });
+
+

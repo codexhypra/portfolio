@@ -16,13 +16,6 @@
     <!-- Include your CSS stylesheets and any other necessary assets here -->
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="https://design.hypra.pro" class="home-button">HOME</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <!-- Loading overlay -->
     <div id="loading-overlay">
@@ -31,6 +24,10 @@
         </div>
         <div id="loading-text">Loading...</div>
     </div>
+
+    <section id="home-button-container" style="display: none;">
+        <a href="https://design.hypra.pro" class="home-button" id="home-button">HOME</a>
+    </section>
 
     <section id="gallery" style="display: none;">
             <h2>Gallery</h2>
@@ -182,6 +179,8 @@
             <!-- Add more images as needed -->
         </div>
     </section>
+
+
 
     <div class="modal" id="modal">
         <img src="" alt="Fullscreen Image" id="fullscreen-image">

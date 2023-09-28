@@ -36,3 +36,38 @@ function closeImage() {
     // Remove the keydown event listener when the modal is closed
     document.removeEventListener("keydown", closeImage);
 }
+
+// Add a loading bar and loading text
+document.addEventListener("DOMContentLoaded", function () {
+    const imageElements = document.querySelectorAll(".image-gallery img");
+    const imageList = Array.from(imageElements).map((img) => img.src);
+
+    let loadedImages = 0;
+
+    // Function to update the loading bar and text
+    function updateLoadingProgress() {
+        const loadingProgress = (loadedImages / imageList.length) * 100;
+        document.getElementById("loading-progress").style.width = loadingProgress + "%";
+        document.getElementById("loading-text").textContent = `Loading ${imageList[loadedImages]}`;
+    }
+
+    // Function to check if all images are loaded
+    function checkAllImagesLoaded() {
+        if (loadedImages === imageList.length) {
+            // All images are loaded, hide the loading overlay and show the gallery
+            document.getElementById("loading-overlay").style.display = "none";
+            document.getElementById("gallery").style.display = "block";
+        }
+    }
+
+    // Preload images
+    imageList.forEach(function (imageUrl) {
+        const img = new Image();
+        img.src = imageUrl;
+        img.onload = function () {
+            loadedImages++;
+            updateLoadingProgress();
+            checkAllImagesLoaded();
+        };
+    });
+});

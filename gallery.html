@@ -24,9 +24,17 @@
         </nav>
     </header>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="image-gallery">
+    <!-- Loading overlay -->
+    <div id="loading-overlay">
+        <div id="loading-bar">
+            <div id="loading-progress"></div>
+        </div>
+        <div id="loading-text">Loading...</div>
+    </div>
+
+    <section id="gallery" style="display: none;">
+            <h2>Gallery</h2>
+            <div class="image-gallery">
             <div class="gallery-item">
                 <img src="assets/img/three-slide/thumb-2.jpg" alt="Design 1" onclick="openImage(this)">
                 <div class="filename">Off White Low Vulcanized Outlined</div>

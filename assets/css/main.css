@@ -1253,3 +1253,41 @@ svg path {
     background-color: #909090; /* Change the background color on hover */
     color: #fff; /* Change the text color on hover */
 }
+
+
+/* Add this CSS to center the loading text and use "gg_sans_Bold" font */
+#loading-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+#loading-bar {
+    width: 100%;
+    max-width: 300px; /* Adjust the width as needed */
+    height: 10px;
+    background-color: #1a1a1a; /* Choose your desired loading bar color */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+#loading-progress {
+    width: 0;
+    height: 100%;
+    background-color: #cacaca; /* Choose your desired loading progress color */ 
+    border-radius: 5px;
+}
+
+#loading-text {
+    font-family: "gg_sans_Bold", sans-serif; /* Use "gg_sans_Bold" font */
+    font-size: 24px; /* Adjust font size as needed */
+    color: #ffffff; /* Choose your desired text color */
+}

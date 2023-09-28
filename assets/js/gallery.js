@@ -11,7 +11,6 @@ function openImage(image) {
     const filenameWithoutExtension = filenameWithExtension.replace(/\.[^/.]+$/, ''); // Remove the extension
     filenameContainer.textContent = filenameWithoutExtension;
 
-    // Display the modal
     modal.style.display = "block";
 
     // Add a click event listener to the modal overlay
